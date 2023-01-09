@@ -319,11 +319,7 @@
     .main-logo-cont{
         padding: 0 40px;
     }
-    .loup-cont {
-        height: 50px;
-        width: 65px;
-        border-radius: 50%;
-    }
+    
     .under-cont1{
         display: none !important;
     }
@@ -332,11 +328,20 @@
     }
     }
     
-
 @media screen and (max-width:600px) {
     .icon-text{
         display: none;
     }
+    .search-bar {
+        height: 45px;
+       }
+       .under-cont2 {
+        height: 45px;
+       }
+       .loup-cont {
+        height: 38px;
+        width: 65px;
+       }
 } 
 .under-cont3 {
     height: 60px;
