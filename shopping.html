@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPPING</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+<div class="main" id="back">
+  <nav class="nav-bar">
+    <div class="header">
+        <div class="logo-image">
+           <a href="#back"><img class="logo" src="image/logo.png"></a>
+        </div>
+        <nav class="txt4">
+            <ul class="nav-list">
+                <li><a class="head-text" href="#iphone"><strong>iphone</strong></a></li>
+                <li><a class="head-text" href="#imac"><strong>iMac</strong></a></li>
+                <li><a class="head-text" href="#macbook"><strong>Mac</strong></a></li>
+                <li><a class="head-text" href="#airpods"><strong>AirPods</strong></a></li>
+                <li><a class="head-text" href="#watch"><strong>Watch</strong></a>
+                <li class="all-producst-menu">
+                <span>                    
+                    <a class="head-text" href="#">
+                    <strong>All</strong>
+                    <i class="bi bi-caret-down-fill"></i>
+                    </a>
+                </span>
+                    <div class="down-container"> 
+                        <ul> 
+                            <li>
+                                <a href="">Hot Sale</a>
+                            </li>
+                            <li>
+                                <a href="">iPhone</a>
+                            </li>
+                            <li>
+                                <a href="">iPad</a>
+                            </li>
+                            <li>
+                                <a href="">MacBook</a>
+                            </li>
+                            <li>
+                                <a href="">Watch</a>
+                            </li>
+                            <li>
+                                <a href="">AirPods</a>
+                            </li>
+                            <li>
+                                <a href="">iMac</a>
+                            </li>
+                            <li>
+                                <a href="">Accesories</a>
+                            </li>
+                            <li>
+                                <a href="/products.html">all Products</a>
+                            </li>
+                        </ul>
+                   </div>
+                </li>
+            </ul>
+        </nav>
+       <div class="main-logo-cont">
+        <div class="logo-cont2">
+                <i class="bi bi-heart"></i>
+                <h4 class="icon-text">Favorites</h4>
+            </div>
+            <div class="logo-cont2">
+                <i class="bi bi-arrow-clockwise"></i>
+                <h4 class="icon-text">Compare</h4>
+            </div>
+            <div class="logo-cont2">
+                <i class="bi bi-bag"></i>
+                <h4 class="icon-text">Cart</h4>
+            </div>
+        </div>
+           <div class="nav-hidden">   
+            <i class="bi bi-list"></i> 
+            <div class="nav-hidden-menu"> 
+                <div class="searchbar-mobile">
+                    <input class="search-input-mobile" id="search-item" type="text" placeholder="Type here to search...">
+                    <img class="loup-mobile" src="image/l2.png">
+                    </div>
+                <ul> 
+                    <li>
+                        <a href="">Hot Sale</a>
+                    </li>
+                    <li>
+                        <a href="">iPhone</a>
+                    </li>
+                    <li>
+                        <a href="">iPad</a>
+                    </li>
+                    <li>
+                        <a href="">MacBook</a>
+                    </li>
+                    <li>
+                        <a href="">Watch</a>
+                    </li>
+                    <li>
+                        <a href="">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="">iMac</a>
+                    </li>
+                    <li>
+                        <a href="">Accesories</a>
+                    </li>
+                    <li>
+                        <a href="/products.html">all Products</a>
+                    </li>
+                </ul>
+            </div>
+           </div>
+    </div>
+    <div class="under-navbar">
+    <div class="under-cont1">
+        <div class="category-drawer">
+            <div class="category-button">
+                <img class="bi-caret-down" src="image/hamburger 2.png">
+                <li class="shop-category"><strong>SHOP CATEGORY</strong></li>
+            </div>
+            <div class="category-menu">
+                <ul> 
+                    <li>
+                        <a href="">Hot Sale</a>
+                    </li>
+                    <li>
+                        <a href="">iPhone</a>
+                    </li>
+                    <li>
+                        <a href="">iPad</a>
+                    </li>
+                    <li>
+                        <a href="">MacBook</a>
+                    </li>
+                    <li>
+                        <a href="">Watch</a>
+                    </li>
+                    <li>
+                        <a href="">AirPods</a>
+                    </li>
+                    <li>
+                        <a href="">iMac</a>
+                    </li>
+                    <li>
+                        <a href="">Accesories</a>
+                    </li>
+                    <li>
+                        <a href="/products.html">all Products</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="under-cont2">
+    <input class="search-bar" type="text" placeholder="Type here to search..." onkeyup="search()">
+    <div class="loup-cont">
+    <img class="loup" src="image/l1.png">
+    </div>
+    </div>
+    <div class="under-cont3">
+         <a href="/registration.html"><img class="profile" src="image/profile1.png"></a>
+    <ul>
+        <li class="registr"><strong>Login / Signup</strong></li>
+    </ul>
+    </div>
+    </div>
+  </nav>
+  <div class="shopping-cart-cont">
+    <div class="shopping-cart-icon">
+        <div class="cart-icon">
+            <i class="bi bi-bag"></i>
+        </div>
+        <div class="your-cart">
+            <span>Your Cart</span>
+        </div>
+    </div>
+    <div class="cart-area">
+        <div class="cart-area-inner">
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image/iphone3.jpeg" alt="">
+                </div>
+                <div class="product-card-body">
+                    <div class="product-card-body-top">
+                        <div class="body-block-name">
+                            <h2>iPhone 14 Pro, 256GB, Gold</h2>
+                            <div class="cont-btns">
+                                <div class="button-container">
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                <input type="button" name="qty" class="qty" maxlength="12" value="0" class="input-text qty" />
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-block-key">
+                            <span class="product-key">03394</span>
+                        </div>
+                    </div>
+                    <div class="product-card-body-bottom">
+                        <h4 class="product-price">4999 ₾</h4>
+                    </div>
+            </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image/iphone5.png" alt="">
+                </div>
+                <div class="product-card-body">
+                    <div class="product-card-body-top">
+                        <div class="body-block-name">
+                            <h2>iPhone 12 Pro Max, 512GB, PacificBlue</h2>
+                            <div class="cont-btns">
+                                <div class="button-container">
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                <input type="button" name="qty" class="qty" maxlength="12" value="0" class="input-text qty" />
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-block-key">
+                            <span class="product-key">03394</span>
+                        </div>
+                    </div>
+                    <div class="product-card-body-bottom">
+                        <h4 class="product-price">3499 ₾</h4>
+                    </div>
+            </div>
+            </div>
+            <div class="product-card">
+                <div class="product-card-image">
+                    <img src="image/airpods2.jpeg" alt="">
+                </div>
+                <div class="product-card-body">
+                    <div class="product-card-body-top">
+                        <div class="body-block-name">
+                            <h2>AirPods Pro</h2>
+                            <div class="cont-btns">
+                                <div class="button-container">
+                                <button class="cart-qty-minus" type="button" value="-">-</button>
+                                <input type="button" name="qty" class="qty" maxlength="12" value="0" class="input-text qty" />
+                                <button class="cart-qty-plus" type="button" value="+">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="body-block-key">
+                            <span class="product-key">03394</span>
+                        </div>
+                    </div>
+                    <div class="product-card-body-bottom">
+                        <h4 class="product-price">1199 ₾</h4>
+                    </div>
+            </div>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="info-card">
+                <div class="info">
+                    <div class="info-list">
+                    <h3>branches in Georgia</h3>
+                    <br>
+                    <h4>Tbilisi: East Point</h4>
+                    <h4>Tbilisi: Tbilisi Mall</h4>
+                    <h4>Tbilisi: Tb sity Mall</h4>
+                    <h4>Tbilisi:  Gldani Mall</h4>
+                    <h4>Tbilisi: pekini str 13</h4>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info-list">
+                    <h3>contact information</h3>
+                    <br>
+                    <h4>Tel: +995 (32) 2443553</h4>
+                    <h4>E-mail: info@applemmm.com</h4>
+                    <br>
+                    <br>
+                    <h4>Service Center • appleservice</h4>
+                    <h4>Tel: +995 (32) 2 23 56 11</h4>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="info-list">
+                <h3>information</h3>
+                <br>
+                <h4>Terms and Conditions</h4>
+                <h4>Return and exchange conditions</h4>
+                <h4>Guarantee</h3>
+                <h4>Vacancy</h4>
+                    </div>
+                </div>
+            </div>
+   </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+<script src="./owl.js"></script>   
+<script src="app.js"></script>
+<script>
+    var incrementPlus;
+    var incrementMinus;
+
+    var buttonPlus  = $(".cart-qty-plus");
+    var buttonMinus = $(".cart-qty-minus");
+
+    var incrementPlus = buttonPlus.click(function() {
+        var $n = $(this)
+            .parent(".button-container")
+            .parent(".cont-btns")
+            .find(".qty");
+        $n.val(Number($n.val())+1 );
+    });
+
+    var incrementMinus = buttonMinus.click(function() {
+            var $n = $(this)
+            .parent(".button-container")
+            .parent(".cont-btns")
+            .find(".qty");
+        var amount = Number($n.val());
+        if (amount > 0) {
+            $n.val(amount-1);
+        }
+    });
+</script>
+<script>
+    $(document).ready(function() {
+
+      $("#owl-demo").owlCarousel({
+
+      navigation : true,
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem : true
+
+      // "singleItem:true" is a shortcut for:
+      // items : 1, 
+      // itemsDesktop : false,
+      // itemsDesktopSmall : false,
+      // itemsTablet: false,
+      // itemsMobile : false
+
+      });
+
+$("#owl-demo-2").owlCarousel({
+items : 3,
+lazyLoad : true,
+navigation : true,
+});
+
+      $('#owl-demo').trigger('owl.play',3000);
+      $('#owl-demo-2').trigger('owl.play',3000);
+
+      $(".category-button").on("click", () =>{
+    $('.category-menu').slideToggle()
+})
+
+$('.bi-list').click(() => {
+    $(".nav-hidden-menu").slideToggle()
+})
+
+    });
+
+</script>
+</body>
+</html>
