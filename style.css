@@ -162,7 +162,7 @@
 }
 .nav-hidden i{
     font-size: 40px;
-    cursor: pointer;
+    cursor: pointer
 }
 .nav-hidden-menu{
     top: 57px;
@@ -272,7 +272,6 @@
     margin-left: 40px;
     display: flex;
     align-items: center;
-    border: 1px solid orange;
     border-radius: 5px;
     background-color: white;
     
@@ -326,9 +325,14 @@
     .under-cont2{
         margin-left: 10px;
     }
+    
     }
     
 @media screen and (max-width:600px) {
+    .main-product-page
+    {
+        grid-template-columns: auto !important;
+    }
     .icon-text{
         display: none;
     }
@@ -342,6 +346,8 @@
         height: 38px;
         width: 65px;
        }
+       
+       
 } 
 .under-cont3 {
     height: 60px;
@@ -360,6 +366,26 @@
     margin-left: 5px;
     color: white;
     cursor: pointer;
+}
+.container{
+    max-width: 1350px;
+    background: #000;
+    position: relative;
+   
+}
+.owl-carousel-one .owl-next i, .owl-carousel-one .owl-prev i{
+    color: white !important;
+    font-size: 30px;
+}
+.owl-prev, .owl-next{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: fit-content;
+    margin: auto;
+}
+.owl-next{
+    right: 0;
 }
 .cards-cont {
     position: relative;
@@ -465,26 +491,7 @@
     overflow: hidden;
     border-radius: 10px;
 }
-.container{
-    max-width: 1350px;
-    background: #000;
-    position: relative;
-   
-}
-.owl-carousel-one .owl-next i, .owl-carousel-one .owl-prev i{
-    color: white !important;
-    font-size: 30px;
-}
-.owl-prev, .owl-next{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    height: fit-content;
-    margin: auto;
-}
-.owl-next{
-    right: 0;
-}
+
 .owl-carousel{
     max-width: 1000px;
     margin: auto;
@@ -660,6 +667,11 @@ span {
 .product-page-right {
    line-height: 2.5;
 }
+.product-page-left{
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+ 
+}
 .options {
 line-height: 4;
 margin-top: 20px;
@@ -813,6 +825,8 @@ padding: 20px 0;
 
 .ecomm-slider{
     position: relative;
+   
+  
 }
 .ecomm-slider .owl-prev, .ecomm-slider .owl-next{
     position: absolute;
@@ -838,6 +852,10 @@ padding: 20px 0;
 .owl-next i {
     color: #000;
 }
+.ecomm-slider .item {
+  
+}
+
 
 
 
@@ -897,6 +915,7 @@ padding: 20px 0;
     height: 100px !important;
     cursor: pointer;
 }
+
 #sync1 .item img{
     width: 100%;
     object-fit: contain;
@@ -1068,7 +1087,6 @@ padding: 20px 0;
     object-fit: contain;
     transition: transform 0.8s;
 }
-radeba aba 
 .product-cards:hover .product-image {
     transform: scale(1.1);
 }
@@ -1137,9 +1155,31 @@ radeba aba
         margin-top: 0;
     }
 }
-.shopping-cart-cont {
-    margin: auto;
-    max-width: 1200px;
+@media screen and (max-width: 840px) {
+    .main-product-page {
+        grid-template-columns: auto;
+        
+    }
+ 
+    
+}
+@media screen and (max-width: 495px){
+     .memory {
+        display: grid !important;
+     }
+     .capacity-value {
+        height: 40px;
+        width: 70px;
+     }
+     .add-to-cart {
+        height: 50px;
+        width: 200px;
+    }
+    .by-product {
+        margin-left: 15px;
+        height: 50px;
+        width: 355px;
+    }
 }
 .shopping-cart-icon {
     display: flex;
